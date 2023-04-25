@@ -25,7 +25,7 @@ function removerItem(item){
       qtd[item] -=1;
       var quantidade = document.getElementById('quantidade' + item);
       var total = document.getElementById('total' + item);
-      quantidade.innerHTML = qtd=[item];
+      quantidade.innerHTML = qtd[item];
       valorTotal[item] = Number.parseFloat(valorProduto[item]) * qtd[item];
       total.innerHTML = valorTotal[item].toFixed(2);
       valorCompra();
